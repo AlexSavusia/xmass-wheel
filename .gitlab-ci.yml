@@ -1,0 +1,26 @@
+image: docker:latest
+
+variables:
+  APP: xmas2022-service # ECR container
+  LABEL: spin # LABEL=subdomain, example - https://$LABEL.yellowimages.com/
+  ARGOCD_PATH_SERVICE: services/spin2022 # git - yellowimages/infrastructure/yi-kube-cd/-/tree/stage/getyellow
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy-tag
+
+before_script:
+  - docker info
+  - which aws || apk add --no-cache curl jq python3 py-pip
+  - which aws || pip install awscli
+
+include:
+- project: yellowimages/infrastructure/gitlab-cicd
+  file: ci-Build.gitlab-ci.yml
+  ref: master
+- project: yellowimages/infrastructure/gitlab-cicd
+  file: cd-Deploy-Tag.gitlab-ci.yml
+  ref: master

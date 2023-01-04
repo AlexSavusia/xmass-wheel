@@ -1,0 +1,32 @@
+name: xmas2022-service
+selector:
+  app: xmas2022-service
+  tier: backend
+  role: product
+image: yellowimages/php8.1:xmas2022
+command:
+  ["sh", "-c", " docker-php-ext-enable xdebug; /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf"]
+workdir: "/var/www"
+sync:
+  - .:/var/www
+forward:
+  - 8080:8080
+  - 8443:8443
+  - 5433:postgres:5432
+  - 15670:rabbit:15672
+reverse:
+  - 9003:9003
+sshServerPort: 0
+environment:
+  - XDEBUG_SESSION=1
+#  - AWS_COGNITO_CLIENT_ID=$AWS_COGNITO_CLIENT_ID
+#  - AWS_COGNITO_CLIENT_SECRET=$AWS_COGNITO_CLIENT_SECRET
+#  - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+#  - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+#  - AWS_CUSTOM_SECRET_KEY=$AWS_CUSTOM_SECRET_KEY
+#  - FB_CLIENT_ID=$FB_CLIENT_ID
+#  - FB_CLIENT_SECRET=$FB_CLIENT_SECRET
+#  - GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID
+#  - GOOGLE_PROJECT_ID=$GOOGLE_PROJECT_ID
+#  - GOOGLE_CLIENT_SECRET=$GOOGLE_CLIENT_SECRET
+#  - MAXMIND_LICENSE_KEY=$MAXMIND_LICENSE_KEY
