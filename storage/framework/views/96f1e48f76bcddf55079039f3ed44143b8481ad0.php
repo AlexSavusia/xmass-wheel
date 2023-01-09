@@ -2,41 +2,16 @@
 
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
-    <link rel="icon" href="https://yellowimages.com/favicon.ico">
-    <link rel="icon" href="https://cdn.yellowimages.com/images/favicons/icon.svg" type="image/svg+xml">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This season, the prizes are insane. Once they're gone, they're gone. From Premium Memberships to $1,000 store credits! The Contest ends on January 15th, 2023.">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <meta property="og:description" content="This season, the prizes are insane. Once they're gone, they're gone. From Premium Memberships to $1,000 store credits! The Contest ends on January 15th, 2023.">
-    <meta property="og:image" content="https://yi-files.s3.amazonaws.com/content/yellowimages.png">
-    <meta property="og:url" content="https://spin.yellowimages.com">
-    <meta property="og:title" content="Holiday Spin-n-Win 2022 - Yellow Images">
+    <meta property="og:title" content="Holiday Spin-n-Win 2022">
     <meta property="twitter:card" content="summary_large_image">
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-
-    <meta property="twitter:site" content="@yellowimages">
-
-    <meta property="twitter:title" content="Holiday Spin-n-Win 2022 - Yellow Images">
-
-    <meta property="twitter:image" content="https://yi-files.s3.amazonaws.com/content/yellowimages.png">
-    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-N56SWK4"></script>
-
-
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KT2K2L5"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30924481-33"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-30924481-33');
-    </script>
-    <script src="https://unpkg.com/konva@8/konva.min.js"></script>
     <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
-    <title>Holiday Spin-n-Win 2022 - Yellow</title>
+    <title>Holiday Spin-n-Win 2022</title>
     <style>
         body {
             font-family: 'Montserrat',  Arial, sans-serif!important;
@@ -1094,31 +1069,6 @@
             -ms-transition: height 0.5s linear;
             -o-transition: height 0.5s linear;
             transition: height 0.5s linear;
-        }
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Regular.eot');
-            src: url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Regular.woff') format('woff'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Bold.eot');
-            src: url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Bold.woff') format('woff'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Bold.ttf') format('truetype'),
-            url('https://cdn.yellowimages.com/fonts/montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
         }
 
     </style>

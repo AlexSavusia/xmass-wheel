@@ -2,8 +2,8 @@ image: docker:latest
 
 variables:
   APP: xmas2022-service # ECR container
-  LABEL: spin # LABEL=subdomain, example - https://$LABEL.yellowimages.com/
-  ARGOCD_PATH_SERVICE: services/spin2022 # git - yellowimages/infrastructure/yi-kube-cd/-/tree/stage/getyellow
+  LABEL: spin # LABEL=subdomain
+  ARGOCD_PATH_SERVICE: services/spin2022
 
 services:
   - docker:dind
@@ -18,9 +18,9 @@ before_script:
   - which aws || pip install awscli
 
 include:
-- project: yellowimages/infrastructure/gitlab-cicd
+- project: infrastructure/gitlab-cicd
   file: ci-Build.gitlab-ci.yml
   ref: master
-- project: yellowimages/infrastructure/gitlab-cicd
+- project: infrastructure/gitlab-cicd
   file: cd-Deploy-Tag.gitlab-ci.yml
   ref: master
