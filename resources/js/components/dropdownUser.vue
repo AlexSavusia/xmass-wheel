@@ -7,19 +7,19 @@
 
     <div 	:class="computedClasses" class="options">
       <div class="markets">
-        <a :href="' https://yellowimages.com' + user.author_url" class="user-name ">
+        <a :href="user.author_url" class="user-name ">
           {{user.display_name}}
         </a>
         <div class="balance dotted">
           <p>${{user.balance}}</p>
-          <a href="https://yellowimages.com/make-a-deposit" class="user-name ">
+          <a href="#" class="user-name ">
             Add funds
           </a>
         </div>
-        <a class="markets__item" href="https://yellowimages.com/my-account/edit-account">
+        <a class="markets__item" href="#">
           <span>My Account</span>
         </a>
-        <a class="markets__item" v-for="market in user.menu" :key="market.key" :href="'https://yellowimages.com' + market.url">
+        <a class="markets__item" v-for="market in user.menu" :key="market.key" :href="market.url">
           <span>{{market.name}}</span>
         </a>
         <a class="log-out dotted" href="#" @click="logOut">

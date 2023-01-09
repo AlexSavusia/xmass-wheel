@@ -39,14 +39,14 @@ final class SSOController extends Controller
             if ($token === '') {
                 throw new BusinessException('empty state', ['validation' => ['state' => 'empty field']]);
             }
-            $token = JWT::decode($token, new Key(config('yellowimages.jwt_key'), 'HS256'));
+            $token = JWT::decode($token, new Key(config('jwt_key'), 'HS256'));
             if (!property_exists($token, 'id') || !is_numeric($token->id)) {
                 throw new BusinessException('empty or incorrect id', ['id' => $token->id ?? '']);
             }
             if (!property_exists($token, 'token') || empty($token->token)) {
                 throw new BusinessException('empty or incorrect token', ['token' => $token->token ?? '']);
             }
-            Session::put('yellow_sso_token', $token->token);
+            Session::put('sso_token', $token->token);
             Auth::loginUsingId($token->id);
         } catch (BusinessException $exception) {
             Log::error($exception->getMessage(), $exception->getContext() + ['method' => 'SSOController::callback']);

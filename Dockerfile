@@ -1,4 +1,4 @@
-FROM yellowimages/php8.1:xmas2022
+FROM php8.1:xmas2022
 WORKDIR /var/www
 RUN mkdir -p /var/www/storage/logs /var/www/storage/cache /var/www/storage/framework/views
 COPY .env.dev /var/www/.env

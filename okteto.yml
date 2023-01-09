@@ -3,7 +3,7 @@ selector:
   app: xmas2022-service
   tier: backend
   role: product
-image: yellowimages/php8.1:xmas2022
+image: php8.1:xmas2022
 command:
   ["sh", "-c", " docker-php-ext-enable xdebug; /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf"]
 workdir: "/var/www"

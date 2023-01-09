@@ -57,7 +57,7 @@
               <h3  class="title">Earn one spin per each item in your order</h3>
               <div class="content">Registered users will receive one token with each paid (non-free) product purchased on our website. All markets are in the game. </div>
               <div class="footer">
-                <a href="https://yellowimages.com/all/objects">Shop now to earn spins</a>
+                <a href="#">Shop now to earn spins</a>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
               <h3  class="title">Earn one spin for every On-Demand Pack</h3>
               <div class="content">Get one token per order, no matter which On-Demand pack you choose.</div>
               <div class="footer">
-                <a href="https://yellowimages.com/on-demand">Buy On-Demand Pack</a>
+                <a href="#">Buy On-Demand Pack</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
               <h3 class="title">Earn one spin for the purchased Yellow Ticket</h3>
               <div class="content">Premium Members get 90% OFF (almost) all stock items. Boost your spin farming for buying products with a huge discount!</div>
               <div class="footer">
-                <a href="https://yellowimages.com/yellow-ticket">Become Elite Member</a>
+                <a href="#">Become Elite Member</a>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <h3  class="title">Earn one spin for each pre-paid Custom Job</h3>
               <div class="content">Receive one spin with each payment for Custom Job service during Holiday Contest time.</div>
               <div class="footer">
-                <a href="https://yellowimages.com/if-you-cannot-find-the-image-needed">Send Job Brief</a>
+                <a href="#">Send Job Brief</a>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
             <button class="popup__close" @click="close" type="button" ></button>
             <h1>Official Contest Rules</h1>
             <div class="popup__text">
-              <p>Contest void where prohibited. No purchase necessary - receive a free entry daily by clicking the "Get one free spin" button on the contest information page. Registered users will receive one token with each paid (non-free) product purchased on yellowimages.com from December 27th, 2022 until January 15th, 2023. Deposit purchases do not apply.
+              <p>Contest void where prohibited. No purchase necessary - receive a free entry daily by clicking the "Get one free spin" button on the contest information page. Registered users will receive one token with each paid (non-free) product purchased on #.com from December 27th, 2022 until January 15th, 2023. Deposit purchases do not apply.
               </p>
               <p>Any potential winner who does not claim their prize within two weeks (14 calendar days) of first notification will forfeit their prize. The prizes are non-exchangeable, non-transferable, and non-redeemable for cash or other prizes. Yellow Images reserves the right to alter, nullify, or amend any contest rules or prizes at anytime at its sole discretion without prior notice.
               </p>

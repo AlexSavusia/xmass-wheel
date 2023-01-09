@@ -28,23 +28,23 @@
         <div class="col">
           <div class="list">
             <div class="header">DEALS</div>
-            <a class="item" href="https://yellowimages.com/yellow-ticket">Subscription 90% OFF</a>
-            <a class="item" href="https://yellowimages.com/make-a-deposit">Store Credits & Bonuses</a>
-            <a class="item" href="https://yellowimages.com/on-demand">
+            <a class="item" href="#">Subscription 90% OFF</a>
+            <a class="item" href="#">Store Credits & Bonuses</a>
+            <a class="item" href="#">
               On-Demand Packs</a>
           </div>
           <div class="list">
             <div class="header">HELP</div>
-            <a class="item" href="https://help.yellowimages.com/hc/en-us">Help Center</a>
-            <a class="item" href="https://yellowimages.com/tutorials">Tutorials</a>
-            <a class="item" href="https://yellowimages.com/academy">Author Academy</a>
+            <a class="item" href="#">Help Center</a>
+            <a class="item" href="#">Tutorials</a>
+            <a class="item" href="#">Author Academy</a>
           </div>
         </div>
         <div class="col">
-          <a class="item" href="https://yellowimages.com/become-an-author">
-            <b>Become an Author</b></a><a class="item" href="https://yellowimages.com/become-an-affiliate">
-          <b>Affiliate Program</b></a><a class="item" href="https://yellowimages.com/invite-a-friend">
-          <b>Invite Your Friends</b></a><a class="item" href="https://yellowimages.com/contact-us">
+          <a class="item" href="#">
+            <b>Become an Author</b></a><a class="item" href="#">
+          <b>Affiliate Program</b></a><a class="item" href="#">
+          <b>Invite Your Friends</b></a><a class="item" href="#">
           <b>Contact us</b>
         </a>
         </div>
@@ -79,37 +79,37 @@ export default {
           key: 'om',
           titleHtml: 'Object <br>Mockups',
           title: 'Object Mockups',
-          url: 'https://yellowimages.com/all/objects'
+          url: '#'
         },
         {
           key: 'cs',
           titleHtml: 'Creative <br>Store',
           title: 'Creative Store',
-          url: 'https://yellowimages.com/all/store'
+          url: '#'
         },
         {
           key: 'png',
           titleHtml: 'PNG <br>Images',
           title: 'PNG Images',
-          url: 'https://yellowimages.com/images-360'
+          url: '#'
         },
         {
           key: 'cf',
           titleHtml: 'Handcrafted <br>fonts',
           title: 'Handcrafted fonts',
-          url: 'https://yellowimages.com/creative-fonts/all'
+          url: '#'
         },
         {
           key: 'jobs',
           titleHtml: 'Custom Job <br>service',
           title: 'Custom Job & Wishlist',
-          url: 'https://yellowimages.com/if-you-cannot-find-the-image-needed'
+          url: '#'
         },
         {
           key: 'vis3d',
           titleHtml: '3D <br>Visualizer',
           title: '3D Visualizer',
-          url: 'https://duck.yellowimages.com'
+          url: '#'
         },
       ]
     };

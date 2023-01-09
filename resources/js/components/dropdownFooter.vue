@@ -8,7 +8,7 @@
     <div class="dropdown-label-container">
       <div class="dropdown-label">
 				<span class="text">
-				More Yellow
+				More
 				</span>
         <svg viewBox="0 0 18 18" class="angle-down header__browse svg-icon svg-fill" :class="{ toggled: isExpanded }"  data-v-ca22ec14="" style="width: 18px; height: 18px;"><path pid="0" _fill="currentColor" d="M5.6 6.4L9 9.8l3.4-3.4 1.1 1.1L9 12 4.5 7.5z"></path></svg>
       </div>
@@ -52,31 +52,31 @@ export default {
       moreLinks: [
         {
           title: 'Object Mockups',
-          url: 'https://yellowimages.com/all/objects'
+          url: '#'
         },
         {
           title: 'Creative Store',
-          url: 'https://yellowimages.com/all/store'
+          url: '#'
         },
         {
           title: 'PNG Images',
-          url: 'https://yellowimages.com/images-360'
+          url: '#'
         },
         {
           title: 'Creative Fonts',
-          url: 'https://yellowimages.com/creative-fonts/all'
+          url: '#'
         },
         {
           title: 'Custom Job',
-          url: 'https://yellowimages.com/if-you-cannot-find-the-image-needed'
+          url: '#'
         },
         {
           title: 'Membership',
-          url: 'https://yellowimages.com/yellow-ticket'
+          url: '#'
         },
         {
           title: 'Become an author',
-          url: 'https://yellowimages.com/become-an-author'
+          url: '#'
         }
       ],
     };
